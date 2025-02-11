@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara AI - Image Enhancer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Sahara AI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="background-removal.html">Background Removal</a></li>
+          <li><a href="ai-humanizer.html">Text Humanizer</a></li>
+          <li><a href="chat.html">Chat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Transform Your Images with AI</h2>
+        <p>Upload your image and let Sahara AI enhance it or remove the background effortlessly.</p>
+        <a href="#upload-section" class="cta-button">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/AI-Powered.jpg" alt="AI Image Enhancement">
+      </div>
+    </section>
+
+    <section id="upload-section" class="upload-section">
+      <h2>Upload Your Image</h2>
+      <form id="upload-form">
+        <input type="file" id="image-upload" accept="image/*" required>
+        <button type="submit">Enhance Image</button>
+      </form>
+      <div id="result" class="result-container">
+        <div id="loading" class="loading-animation">
+          <div class="spinner"></div>
+          <p>Processing your image...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose Sahara AI?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img src="images/AI.png" alt="AI-Powered">
+          <h3>AI-Powered</h3>
+          <p>Leverage cutting-edge AI technology for stunning results.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/High-Quality.jpg" alt="High-Quality">
+          <h3>High-Quality</h3>
+          <p>Get crystal-clear, high-resolution images every time.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/Fast Processing.png" alt="Fast Processing">
+          <h3>Fast Processing</h3>
+          <p>Quick and efficient image processing in seconds.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Sahara AI. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

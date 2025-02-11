@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara AI - AI Humanizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Sahara AI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="background-removal.html">Background Removal</a></li>
+          <li><a href="ai-humanizer.html">Text Humanizer</a></li>
+          <li><a href="chat.html">Chat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Make Your AI Text Undetectable</h2>
+        <p>Humanize your AI-generated text and bypass AI detectors with Sahara AI.</p>
+        <a href="#humanizer-section" class="cta-button">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x400.png?text=AI+Humanizer" alt="AI Humanizer">
+      </div>
+    </section>
+
+    <section id="humanizer-section" class="upload-section">
+      <h2>Humanize Your Text</h2>
+      <form id="humanizer-form">
+        <textarea id="text-input" placeholder="Enter your AI-generated text here..." required></textarea>
+        <select id="readability">
+          <option value="BASIC">Basic</option>
+          <option value="ENHANCED">Enhanced</option>
+          <option value="AGGRESSIVE">Aggressive</option>
+        </select>
+        <select id="mode">
+          <option value="Standard">Standard</option>
+          <option value="University">University</option>
+          <option value="Journalist">Journalist</option>
+          <option value="Doctorate">Doctorate</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+        <button type="submit">Humanize Text</button>
+      </form>
+      <div id="humanizer-result" class="result-container">
+        <div id="loading" class="loading-animation">
+          <div class="spinner"></div>
+          <p>Processing your text...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose Sahara AI?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img src="https://via.placeholder.com/100.png?text=AI+Powered" alt="AI-Powered">
+          <h3>AI-Powered</h3>
+          <p>Leverage cutting-edge AI technology for stunning results.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://via.placeholder.com/100.png?text=High+Quality" alt="High-Quality">
+          <h3>High-Quality</h3>
+          <p>Get crystal-clear, high-resolution images every time.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://via.placeholder.com/100.png?text=Fast+Processing" alt="Fast Processing">
+          <h3>Fast Processing</h3>
+          <p>Quick and efficient image processing in seconds.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Sahara AI. All rights reserved.</p>
+  </footer>
+
+  <script src="ai-humanizer.js"></script>
+</body>
+</html>

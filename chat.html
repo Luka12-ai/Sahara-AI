@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara AI - Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Sahara AI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="background-removal.html">Background Removal</a></li>
+          <li><a href="ai-humanizer.html">Text Humanizer</a></li>
+          <li><a href="chat.html">Chat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="chat-container">
+      <div class="sidebar">
+        <button id="new-chat" class="new-chat-btn">
+          <i class="fas fa-plus"></i> New Chat
+        </button>
+        <div id="chat-history-list" class="chat-history-list">
+          <!-- Chat history items will be added here -->
+        </div>
+      </div>
+      <div class="chat-main">
+        <section class="chat-section">
+          <div class="model-selection">
+            <select id="model-select">
+              <option value="gpt-4">GPT-4</option>
+              <option value="gpt-4o-mini">GPT-4o Mini</option>
+              <option value="claude-3-haiku">Claude 3 Haiku</option>
+              <option value="gemini-flash">Gemini Flash</option>
+              <option value="mistral-nemo">Mistral Nemo</option>
+              <option value="mixtral-8x7b">Mistral 8x7B</option>
+            </select>
+          </div>
+          <div id="messages-container" class="messages-container">
+            <!-- Chat messages will appear here -->
+          </div>
+          <form id="chat-form" class="chat-input-form">
+            <textarea id="chat-input" placeholder="Enter your message here..." required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Sahara AI. All rights reserved.</p>
+  </footer>
+  <script src="chat.js"></script>
+</body>
+</html>
