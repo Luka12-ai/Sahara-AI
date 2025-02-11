@@ -6,7 +6,8 @@
   <title>Sahara AI - Chat</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">      
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
 </head>
 <body>
   <header>
@@ -36,12 +37,8 @@
         <section class="chat-section">
           <div class="model-selection">
             <select id="model-select">
-              <option value="gpt-4">GPT-4</option>
               <option value="gpt-4o-mini">GPT-4o Mini</option>
-              <option value="claude-3-haiku">Claude 3 Haiku</option>
-              <option value="gemini-flash">Gemini Flash</option>
-              <option value="mistral-nemo">Mistral Nemo</option>
-              <option value="mixtral-8x7b">Mistral 8x7B</option>
+              <option value="gemini-2.0-pro">Gemini 2.0 Pro</option>
             </select>
           </div>
           <div id="messages-container" class="messages-container">
@@ -56,7 +53,7 @@
     </div>
   </main>
   <footer>
-    <p>&copy; 2023 Sahara AI. All rights reserved.</p>
+    <p>© 2023 Sahara AI. All rights reserved.</p>
   </footer>
   <script src="chat.js"></script>
 </body>

@@ -284,6 +284,7 @@ footer {
   flex-direction: column;
   gap: 15px;
   z-index: 1;
+  animation: slideInFromLeft 0.5s ease-out;
 }
 
 .new-chat-btn {
@@ -331,6 +332,7 @@ footer {
   display: flex;
   min-width: 0;
   width: 100%;
+  animation: slideInFromRight 0.5s ease-out;
 }
 
 .chat-section {
@@ -363,22 +365,26 @@ footer {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
+  word-break: break-word; /* prevent long words from overflowing */
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-
-/* Limit the width of user messages */
 .message.user {
-  max-width: 70%; /* Adjust this value as needed */
   align-self: flex-end;
   background-color: var(--sunset);
   color: var(--white);
+  text-align: left; /* Override any inherited centering */
 }
 
-/* Limit the width of AI messages */
+/* Style for AI messages */
 .message.ai {
-  max-width: 70%; /* Adjust this value as needed */
   align-self: flex-start;
   background-color: var(--sand);
+  text-align: left; /* Override any inherited centering */
+}
+
+.message b, .message i, .message h1, .message h2 {
+  display: inline; /* or block depending on desired behavior */
 }
 
 
@@ -440,6 +446,12 @@ footer {
 
 .model-selection select {
   width: 200px;
+  padding: 8px;
+  border: 1px solid var(--desert);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--charcoal);
 }
 
 /* Loaders */
@@ -476,7 +488,7 @@ footer {
   width: 45px;
   aspect-ratio: 1;
   --c: no-repeat linear-gradient(#000 0 0);
-  background: 
+  background:
     var(--c) 0%   50%,
     var(--c) 50%  50%,
     var(--c) 100% 50%;
@@ -557,4 +569,29 @@ footer {
     90%,
     100% {transform:scale(var(--s,1)) translate(0px,0px)    rotate(180deg)}
 }
+.chat-history-item.active {
+  background-color: var(--sunset);
+  color: var(--white);
+  font-weight: bold;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
